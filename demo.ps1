@@ -14,13 +14,14 @@ Write-Host "..." -ForegroundColor Gray
 Write-Host "`nPress Enter to continue..." -ForegroundColor Green
 Read-Host
 
-# Step 2: Try to run it normally (it will fail)
-Write-Host "`n[STEP 2] Running the application normally..." -ForegroundColor Yellow
+# Step 2: Try to run it normally (it handles gracefully now)
+Write-Host "`n[STEP 2] Running the application (currently fixed version)..." -ForegroundColor Yellow
 Write-Host "Command: node examples/nodejs-bug/index.js`n" -ForegroundColor Gray
 
 node examples/nodejs-bug/index.js
-Write-Host "`nNotice: Invalid discount code produces NaN!" -ForegroundColor Red
-Write-Host "`nPress Enter to continue..." -ForegroundColor Green
+Write-Host "`nNotice: It handles invalid discount codes gracefully with a warning." -ForegroundColor Gray
+Write-Host "Let's make it throw an error to demo the fix workflow...`n" -ForegroundColor Gray
+Write-Host "Press Enter to continue..." -ForegroundColor Green
 Read-Host
 
 # Step 3: Temporarily modify the file to throw an error
