@@ -90,12 +90,3 @@ export interface KiloConfig {
   saveHistory: boolean;
   maxSnapshots: number;
 }
-
-export interface AgentStatus {
-  id: string;
-  status: 'pending' | 'running' | 'completed' | 'failed';
-  progress: number;
-  message: string;
-  startedAt: Date;
-  completedAt?: Date;
-}

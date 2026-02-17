@@ -78,18 +78,18 @@ Automatic Cloud Agent provisioning for reproduction in clean environment:
 - Collects diagnostic data
 
 ### Context-Aware Diagnosis
-AI-powered analysis crossing logs with project context:
-- Analyzes README.md and project docs
+AI-powered analysis using Kilo's Claude Sonnet 4.5:
+- Analyzes complete error context
 - Identifies known error patterns
-- Compares with similar resolved errors
-- Suggests root cause analysis
+- Understands project structure and dependencies
+- Provides root cause with high confidence
 
 ### Auto-Exorcism
-Receive suggested fix directly in terminal or VS Code:
+Receive AI-generated fix directly in terminal or VS Code:
 - Applicable fix with one command
 - Clear explanation of problem found
-- Link to exact problematic code line
-- Suggested tests to validate the fix
+- Exact code changes with before/after
+- Confidence score for suggested fix
 
 ## Commands
 
