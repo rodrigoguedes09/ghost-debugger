@@ -201,23 +201,6 @@ npm run lint
 - Jest (testing)
 - Kilo AI Gateway API
 
-## Contributing
-
-Contributions are welcome! This project is being developed for the DeveloperWeek 2026 Hackathon.
-
-### Development Roadmap
-
-- [x] Week 1: MVP CLI with capture and Kilo AI integration
-- [x] Real AI analysis with Claude Sonnet 4.5
-- [x] Auto-fix application with confidence scores
-- [ ] Week 2: VS Code extension
-- [ ] Week 3: CI/CD integration
-- [ ] Week 4: Demo polish and advanced features
-
-## License
-
-MIT
-
 ## Built For
 
 DeveloperWeek 2026 Hackathon - Kilo Challenge
