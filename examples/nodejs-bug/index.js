@@ -15,6 +15,12 @@ function applyDiscount(total, discountCode) {
     'SAVE30': 0.30,
   };
   
+  // Return original price if discount code is invalid
+  if (!discounts[discountCode]) {
+    console.warn(`Invalid discount code: ${discountCode}. Applying no discount.`);
+    return total;
+  }
+  
   const discountAmount = total * discounts[discountCode];
   return total - discountAmount;
 }

@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { input } from '@inquirer/prompts';
+import inquirer from 'inquirer';
 import { saveConfig, loadConfig } from '../../utils/config';
 
 interface AuthOptions {
@@ -12,9 +12,12 @@ export async function authCommand(options: AuthOptions): Promise<void> {
   let token = options.token;
   
   if (!token) {
-    token = await input({
+    const answers = await inquirer.prompt([{
+      type: 'input',
+      name: 'token',
       message: 'Enter your Kilo API token:',
-    });
+    }]);
+    token = answers.token;
   }
 
   if (!token || token.trim() === '') {
